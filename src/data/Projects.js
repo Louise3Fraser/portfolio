@@ -1,0 +1,206 @@
+// assets:
+import rg from "../assets/random-gallery/rg.mp4";
+import rgImg from "../assets/random-gallery/rg-img.png";
+import tenfingers from "../assets/writing/tenfingers.jpg";
+
+import portrait from "../assets/art/portrait.png";
+import ldc from "../assets/ldc/ldc.mp4";
+import ldcImg from "../assets/ldc/ldccover.png";
+import sketches from "../assets/art/sketches.png";
+import solitaire from "../assets/solitaire/solitaire.mp4";
+import solitaireCover from "../assets/solitaire/solitaire-cover.png";
+import itellCover from "../assets/itell/itell-cover-lg.png";
+import animation from "../assets/art/animation.mp4";
+// components:
+import RandomGallery from "../projects/RandomGallery";
+import LittleDressCode from "../projects/LittleDressCode";
+import Sketches from "../projects/Sketches";
+import Solitaire from "../projects/Solitaire";
+import TenFingers from "../projects/TenFingers";
+import Itell from "../projects/Itell";
+import Animation from "../projects/Animation";
+
+export const projects = [
+  {
+    id: "rg",
+    title: "Random Gallery",
+    date: "2024-12-01",
+    src: rg,
+    type: "video",
+    component: RandomGallery,
+    desc: "full-stack react website",
+    image: rgImg,
+    category: "code",
+    status: "new",
+  },
+  {
+    id: "ldc",
+    title: "LittleDressCode",
+    date: "2025-01-15",
+    src: ldc,
+    type: "video",
+    desc: "iOS mobile fashion app",
+    component: LittleDressCode,
+    category: "code",
+    image: ldcImg,
+  },
+  {
+    id: "itell",
+    title: "iTELL",
+    date: "2025-01-15",
+    src: itellCover,
+    type: "img",
+    desc: "AI-powered textbook platform",
+    component: Itell,
+    category: "code",
+    image: itellCover,
+  },
+  {
+    id: "animation",
+    title: "Animation",
+    date: "2025-01-15",
+    src: animation,
+    type: "video",
+    desc: "made with aftereffects",
+    component: Animation,
+    category: "art",
+  },
+  {
+    id: "solitaire",
+    title: "Solitaire",
+    date: "2025-01-15",
+    src: solitaire,
+    type: "video",
+    desc: "full-stack web app",
+    component: Solitaire,
+    category: "code",
+    image: solitaireCover,
+  },
+  {
+    id: "sketches",
+    image: sketches,
+    title: "Linework",
+    date: "2025-01-15",
+    src: sketches,
+    type: "img",
+    desc: "3 stages of art",
+    component: Sketches,
+    category: "art",
+  },
+
+  {
+    id: "tenfingers",
+    title: "Ten Fingers",
+    date: "2025-01-15",
+    src: tenfingers,
+    image: tenfingers,
+    type: "img",
+    desc: "short story - horror",
+    component: TenFingers,
+    category: "writing",
+  },
+
+  // jjjj
+   {
+    id: "mm",
+    title: "Mushroom Mayhem",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "video",
+    desc: "2d platform Unity game",
+    component: TenFingers,
+    category: "code",
+  },
+   {
+    id: "nyc",
+    title: "Times Square",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "edited w/photoshop",
+    component: TenFingers,
+    category: "design",
+  },
+    {
+    id: "ixl",
+    title: "IXL Learning",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "adding new assignment feature",
+    component: TenFingers,
+    category: "design",
+  },
+   {
+    id: "happyline",
+    title: "HappyLine",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "fostering daily gratitude",
+    component: TenFingers,
+    category: "design",
+  },
+    {
+    id: "moti",
+    title: "Moti",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "making meditation a habit",
+    component: TenFingers,
+    category: "design",
+  },
+  
+ {
+    id: "stickersfood",
+    title: "Food Stickers",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "hand-drawn food stickers",
+    component: TenFingers,
+    category: "art",
+  },
+   {
+    id: "stickersvarious",
+    title: "Random Stickers",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "hand-drawn stickers",
+    component: TenFingers,
+    category: "art",
+  },
+     {
+    id: "stamps",
+    title: "Procreate Stamps",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "hand-drawn stamps",
+    component: TenFingers,
+    category: "art",
+  },
+
+  ////
+  {
+    id: "portrait",
+    title: "Portrait",
+    date: "2025-01-15",
+    src: portrait,
+    image: portrait,
+    type: "img",
+    desc: "portrait practice",
+    component: TenFingers,
+    category: "art",
+  },
+];

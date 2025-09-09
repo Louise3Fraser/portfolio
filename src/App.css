@@ -1,0 +1,264 @@
+body,
+html {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: #cccccc;
+  background-color: #111111;
+  font-weight: 450;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Geist Mono", monospace;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 0px
+}
+
+h2 {
+  font-family: "Geist Mono", monospace;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 650;
+  color: #d4d4d4;
+  margin-bottom: 5px
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.column {
+  box-sizing: border-box;
+}
+
+.louise-intro {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  gap: 13px;
+  flex-direction: row;
+}
+
+.middle {
+  padding: 30px;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 32%;
+}
+
+.left {
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 18%;
+  border-right: 1px solid #222222;
+}
+
+.right {
+  height: 100vh;
+  width: 50%;
+  overflow-y: scroll;
+  border-left: 1px solid #222222;
+  box-sizing: border-box;
+}
+
+.divider {
+  height: 1px;
+  background-color: #222222;
+}
+
+.project-card {
+  padding: 30px;
+  cursor: pointer;
+  transition: filter 0.2s ease, background-color 0.2s ease;
+}
+
+.project-card:hover {
+  filter: brightness(0.8);
+}
+.project-page-wrapper {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.project-page-wrapper.fade-in {
+  opacity: 1;
+}
+
+.project-page-wrapper.fade-out {
+  opacity: 0;
+}
+a {
+  color: white;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/* Work list styles */
+.terminal-container {
+  margin-top: 60px;
+  min-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.terminal-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: color 0.2s ease;
+}
+
+.nav-button:hover {
+  color: #999;
+}
+
+.nav-button.active {
+  color: #d4d4d4;
+  position: relative;
+}
+
+.terminal-divider {
+  height: 1px;
+  background: #333;
+  margin-bottom: 30px;
+}
+
+.terminal-content {
+  padding-top: 10px;
+  max-width: none;
+  min-width: fit-content;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 120px 250px 120px;
+  gap: 20px;
+  margin-bottom: 4px;
+  align-items: center;
+  padding: 0px 0;
+  transition: background-color 0.1s ease;
+  align-items: start;
+  white-space: nowrap;
+  min-width: fit-content;
+}
+
+.project-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+}
+
+.time-text {
+  color: #666;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.new-badge {
+  background: #dc5a2b;
+  color: #fff;
+}
+
+.wip-badge {
+  background: #4a9eff;
+  color: #fff;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-description {
+  padding: 30px;
+}
+
+.project-date {
+  margin: 0px
+}
+.overview {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+button {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Geist Mono", monospace;
+}
+
+
+.music {
+  padding: 30px;
+}
+
+.project-main-content {
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.project-quick-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+ul {
+  padding-left: 0px;
+   list-style-type: none;
+   margin: 0px;
+}
+
+li {
+  color: #999
+}
+
+.project-media {
+  padding-left: 30px;
+  padding-right: 30px;
+}
