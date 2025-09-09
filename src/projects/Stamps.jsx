@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import HeaderTop from "../components/HeaderTop";
-import times from "../assets/art/times-square.png"
+import stampsGreen from "../assets/art/stamps-green.png"
+import procreate from "../assets/art/procreate.png";
 
-export default function TimesSquare({ project, onBack }) {
+export default function Stamps({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,7 +23,8 @@ export default function TimesSquare({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img alt="NYC Times Square" width={"100%"} src={times} />
+          <img width={"100%"} alt="Leaf stamps" src={stampsGreen} />
+          <img width={"100%"} alt="Leaf stamps in Procreate" src={procreate} />
         </div>
       </div>
     </div>

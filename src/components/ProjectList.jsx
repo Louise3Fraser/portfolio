@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { projects } from "../data/Projects";
 import ProjectCard from "./ProjectCard";
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import HeaderTop from "../components/HeaderTop";
-import times from "../assets/art/times-square.png"
+import portrait from "../assets/art/portrait.png"
 
-export default function TimesSquare({ project, onBack }) {
+export default function Portrait({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function TimesSquare({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img alt="NYC Times Square" width={"100%"} src={times} />
+          <img width={"100%"} alt="Portrait of a man" src={portrait} />
         </div>
       </div>
     </div>

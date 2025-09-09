@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { projects } from "../data/Projects";
 import "../App.css";
 
@@ -12,10 +11,10 @@ function Work({ activeFilter, onFilterChange, onProjectSelect }) {
 
   const getStatusBadge = (project) => {
     if (project.status === "new") {
-      return <span className="status-badge wip-badge">NEW ⟲</span>;
+      return <span className="status-badge wip-badge">NEW⟲</span>;
     }
     if (project.status === "wip") {
-      return <span className="status-badge new-badge">WIP ⧗</span>;
+      return <span className="status-badge new-badge">WIP⧗</span>;
     }
     return null;
   };

@@ -24,9 +24,9 @@ export default function Sketches({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img width={"100%"} src={Sketch1} />
-          <img width={"100%"} src={Sketch2} />
-          <img width={"100%"} src={Sketch3} />
+          <img width={"100%"} alt="line art" src={Sketch1} />
+          <img width={"100%"} alt="line art and shading" src={Sketch2} />
+          <img width={"100%"} alt="charcoal drawing" src={Sketch3} />
         </div>
       </div>
     </div>

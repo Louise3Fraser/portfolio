@@ -17,7 +17,14 @@ function MiddleColumn({ onProjectSelect }) {
     <div>
       <p>
         Hi there! I’m Louise, a recent{" "}
-        <a href="mailto:louise3fraser@gmail.com">Vanderbilt University</a> graduate with a double major in Computer Science & Psychology. I build
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={"https://www.vanderbilt.edu/"}
+        >
+          Vanderbilt University
+        </a>{" "}
+        graduate with a double major in Computer Science & Psychology. I build
         at the intersection of engineering and design. I’m excited about
         creating technology grounded in human behavior that actually makes a
         difference.

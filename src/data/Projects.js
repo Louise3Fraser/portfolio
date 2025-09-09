@@ -2,7 +2,6 @@
 import rg from "../assets/random-gallery/rg.mp4";
 import rgImg from "../assets/random-gallery/rg-img.png";
 import tenfingers from "../assets/writing/tenfingers.jpg";
-
 import portrait from "../assets/art/portrait.png";
 import ldc from "../assets/ldc/ldc.mp4";
 import ldcImg from "../assets/ldc/ldccover.png";
@@ -11,6 +10,13 @@ import solitaire from "../assets/solitaire/solitaire.mp4";
 import solitaireCover from "../assets/solitaire/solitaire-cover.png";
 import itellCover from "../assets/itell/itell-cover-lg.png";
 import animation from "../assets/art/animation.mp4";
+import stamps from "../assets/art/stamps.mp4";
+import stickersr from "../assets/art/stickersrandom.mp4";
+import food from "../assets/art/food-stickers.png";
+import mmvid from "../assets/mm/mm-vid.mp4";
+import mmcover from "../assets/mm/mm-cover.png";
+import times from "../assets/art/times-square.png";
+
 // components:
 import RandomGallery from "../projects/RandomGallery";
 import LittleDressCode from "../projects/LittleDressCode";
@@ -19,12 +25,18 @@ import Solitaire from "../projects/Solitaire";
 import TenFingers from "../projects/TenFingers";
 import Itell from "../projects/Itell";
 import Animation from "../projects/Animation";
+import Stamps from "../projects/Stamps";
+import StickersRandom from "../projects/StickersRandom";
+import FoodStickers from "../projects/FoodStickers";
+import MushroomMayhem from "../projects/MushroomMayhem";
+import TimesSquare from "../projects/TimesSquare";
+import Portrait from "../projects/Portrait";
 
 export const projects = [
   {
     id: "rg",
     title: "Random Gallery",
-    date: "2024-12-01",
+    date: "2025",
     src: rg,
     type: "video",
     component: RandomGallery,
@@ -36,7 +48,7 @@ export const projects = [
   {
     id: "ldc",
     title: "LittleDressCode",
-    date: "2025-01-15",
+    date: "2025",
     src: ldc,
     type: "video",
     desc: "iOS mobile fashion app",
@@ -47,10 +59,10 @@ export const projects = [
   {
     id: "itell",
     title: "iTELL",
-    date: "2025-01-15",
+    date: "2024",
     src: itellCover,
     type: "img",
-    desc: "AI-powered textbook platform",
+    desc: "AI-powered platform",
     component: Itell,
     category: "code",
     image: itellCover,
@@ -58,7 +70,7 @@ export const projects = [
   {
     id: "animation",
     title: "Animation",
-    date: "2025-01-15",
+    date: "2025",
     src: animation,
     type: "video",
     desc: "made with aftereffects",
@@ -68,7 +80,7 @@ export const projects = [
   {
     id: "solitaire",
     title: "Solitaire",
-    date: "2025-01-15",
+    date: "2024",
     src: solitaire,
     type: "video",
     desc: "full-stack web app",
@@ -80,7 +92,7 @@ export const projects = [
     id: "sketches",
     image: sketches,
     title: "Linework",
-    date: "2025-01-15",
+    date: "2023",
     src: sketches,
     type: "img",
     desc: "3 stages of art",
@@ -91,53 +103,53 @@ export const projects = [
   {
     id: "tenfingers",
     title: "Ten Fingers",
-    date: "2025-01-15",
+    date: "2025",
     src: tenfingers,
     image: tenfingers,
     type: "img",
     desc: "short story - horror",
     component: TenFingers,
     category: "writing",
+    status: "wip"
   },
 
   // jjjj
-   {
+  {
     id: "mm",
     title: "Mushroom Mayhem",
-    date: "2025-01-15",
-    src: portrait,
-    image: portrait,
+    date: "2023",
+    src: mmvid,
+    image: mmcover,
     type: "video",
     desc: "2d platform Unity game",
-    component: TenFingers,
+    component: MushroomMayhem,
     category: "code",
   },
-   {
+  {
     id: "nyc",
     title: "Times Square",
-    date: "2025-01-15",
-    src: portrait,
-    image: portrait,
+    date: "2024",
+    src: times,
     type: "img",
     desc: "edited w/photoshop",
-    component: TenFingers,
+    component: TimesSquare,
     category: "design",
   },
-    {
+  {
     id: "ixl",
     title: "IXL Learning",
-    date: "2025-01-15",
+    date: "2025",
     src: portrait,
     image: portrait,
     type: "img",
-    desc: "adding new assignment feature",
+    desc: "new assignment feature",
     component: TenFingers,
     category: "design",
   },
-   {
+  {
     id: "happyline",
     title: "HappyLine",
-    date: "2025-01-15",
+    date: "2024",
     src: portrait,
     image: portrait,
     type: "img",
@@ -145,10 +157,10 @@ export const projects = [
     component: TenFingers,
     category: "design",
   },
-    {
+  {
     id: "moti",
     title: "Moti",
-    date: "2025-01-15",
+    date: "2024",
     src: portrait,
     image: portrait,
     type: "img",
@@ -156,51 +168,49 @@ export const projects = [
     component: TenFingers,
     category: "design",
   },
-  
- {
+
+  {
     id: "stickersfood",
     title: "Food Stickers",
-    date: "2025-01-15",
-    src: portrait,
-    image: portrait,
+    date: "2021",
+    src: food,
     type: "img",
     desc: "hand-drawn food stickers",
-    component: TenFingers,
+    component: FoodStickers,
     category: "art",
   },
-   {
+  {
     id: "stickersvarious",
     title: "Random Stickers",
-    date: "2025-01-15",
-    src: portrait,
-    image: portrait,
-    type: "img",
+    date: "2020",
+    src: stickersr,
+    type: "video",
     desc: "hand-drawn stickers",
-    component: TenFingers,
-    category: "art",
-  },
-     {
-    id: "stamps",
-    title: "Procreate Stamps",
-    date: "2025-01-15",
-    src: portrait,
-    image: portrait,
-    type: "img",
-    desc: "hand-drawn stamps",
-    component: TenFingers,
+    component: StickersRandom,
     category: "art",
   },
 
   ////
   {
+    id: "stamps",
+    title: "Procreate Stamps",
+    date: "2020",
+    src: stamps,
+    type: "video",
+    desc: "hand-drawn stamps",
+    component: Stamps,
+    category: "art",
+  },
+
+  {
     id: "portrait",
     title: "Portrait",
-    date: "2025-01-15",
+    date: "2024",
     src: portrait,
     image: portrait,
     type: "img",
     desc: "portrait practice",
-    component: TenFingers,
+    component: Portrait,
     category: "art",
   },
 ];

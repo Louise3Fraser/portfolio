@@ -5,7 +5,7 @@ export default function TenFingers({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-        window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     const timer = setTimeout(() => {
       setIsVisible(true);
@@ -18,8 +18,16 @@ export default function TenFingers({ project, onBack }) {
     <div
       className={`project-page-wrapper ${isVisible ? "fade-in" : "fade-out"}`}
     >
-      <ProjectHeader project={project} onBack={onBack} />
+      <ProjectHeader
+        project={project}
+        onBack={onBack}
+        about={`Ten Fingers is a short story I wrote during my 
+      senior year Advanced Fiction Writing class. It is a 6,000 word horror/mystery story that examines themes surrounding
+      good/evil, mental health, and generational trauma. 
+        `}
+      />
       <div className="project-main-content">
+        <p>I won't include the full story here, but here is a snippet:</p>
         <p className="italic">
           I was sorting through a box of ceramic frogs when Grandma came
           scurrying into the room with an excited expression on her face.
@@ -48,6 +56,7 @@ export default function TenFingers({ project, onBack }) {
           “I found them underneath the floorboards in the basement. Right next
           to the old furnace.”
         </p>
+          <p>✮ ⋆ ˚｡𖦹 ⋆｡ ° ✩</p>
       </div>
     </div>
   );

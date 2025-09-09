@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import HeaderTop from "../components/HeaderTop";
-import times from "../assets/art/times-square.png"
+import stickers1 from "../assets/art/stickersr-1.png";
+import stickers2 from "../assets/art/stickersr-2.png";
+import stickers3 from "../assets/art/stickersr-3.png";
+import stickers4 from "../assets/art/stickersr-4.png";
 
-export default function TimesSquare({ project, onBack }) {
+export default function StickersRandom({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-        window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     const timer = setTimeout(() => {
       setIsVisible(true);
@@ -22,7 +25,10 @@ export default function TimesSquare({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img alt="NYC Times Square" width={"100%"} src={times} />
+          <img width={"100%"} alt="Random stickers" src={stickers1} />
+          <img width={"100%"} alt="Random stickers" src={stickers2} />
+          <img width={"100%"} alt="Random stickers"src={stickers3} />
+          <img width={"100%"} alt="Random stickers" src={stickers4} />
         </div>
       </div>
     </div>
