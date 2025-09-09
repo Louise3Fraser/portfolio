@@ -385,3 +385,18 @@ li {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+
+.disc {
+  transition: transform 0.2s ease;
+}
+
+.spin-disc {
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

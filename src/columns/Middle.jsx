@@ -34,6 +34,7 @@ function MiddleColumn({ onProjectSelect }) {
         watching movies. I’m currently exploring full-time roles while
         traveling.
       </p>
+      <p>🚧 Site is under construction. More to come:) 🚧</p>
       <Work
         activeFilter={activeFilter}
         onFilterChange={handleFilterChange}
