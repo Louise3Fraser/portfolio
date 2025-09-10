@@ -16,6 +16,9 @@ import food from "../assets/art/food-stickers.png";
 import mmvid from "../assets/mm/mm-vid.mp4";
 import mmcover from "../assets/mm/mm-cover.png";
 import times from "../assets/art/times-square.png";
+import moti from "../assets/moti/moti-cover.png";
+import ixl from "../assets/ixl/ixl-cover.png";
+import hl from "../assets/happyline/hl-cover.png";
 
 // components:
 import RandomGallery from "../projects/RandomGallery";
@@ -31,6 +34,9 @@ import FoodStickers from "../projects/FoodStickers";
 import MushroomMayhem from "../projects/MushroomMayhem";
 import TimesSquare from "../projects/TimesSquare";
 import Portrait from "../projects/Portrait";
+import Moti from "../projects/Moti";
+import IXL from "../projects/IXL";
+import HappyLine from "../projects/HappyLine";
 
 export const projects = [
   {
@@ -67,16 +73,7 @@ export const projects = [
     category: "code",
     image: itellCover,
   },
-  {
-    id: "animation",
-    title: "Animation",
-    date: "2025",
-    src: animation,
-    type: "video",
-    desc: "made with aftereffects",
-    component: Animation,
-    category: "art",
-  },
+
   {
     id: "solitaire",
     title: "Solitaire",
@@ -87,6 +84,17 @@ export const projects = [
     component: Solitaire,
     category: "code",
     image: solitaireCover,
+  },
+  {
+    id: "moti",
+    title: "Moti",
+    date: "2024",
+    src: moti,
+    image: moti,
+    type: "img",
+    desc: "making meditation a habit",
+    component: Moti,
+    category: "design",
   },
   {
     id: "sketches",
@@ -110,10 +118,9 @@ export const projects = [
     desc: "short story - horror",
     component: TenFingers,
     category: "writing",
-    status: "wip"
+    status: "wip",
   },
 
-  // jjjj
   {
     id: "mm",
     title: "Mushroom Mayhem",
@@ -136,36 +143,35 @@ export const projects = [
     category: "design",
   },
   {
+    id: "animation",
+    title: "Animation",
+    date: "2025",
+    src: animation,
+    type: "video",
+    desc: "made with aftereffects",
+    component: Animation,
+    category: "art",
+  },
+  {
     id: "ixl",
     title: "IXL Learning",
     date: "2025",
-    src: portrait,
-    image: portrait,
+    src: ixl,
+    image: ixl,
     type: "img",
     desc: "new assignment feature",
-    component: TenFingers,
+    component: IXL,
     category: "design",
   },
   {
     id: "happyline",
     title: "HappyLine",
     date: "2024",
-    src: portrait,
-    image: portrait,
+    src: hl,
+    image: hl,
     type: "img",
     desc: "fostering daily gratitude",
-    component: TenFingers,
-    category: "design",
-  },
-  {
-    id: "moti",
-    title: "Moti",
-    date: "2024",
-    src: portrait,
-    image: portrait,
-    type: "img",
-    desc: "making meditation a habit",
-    component: TenFingers,
+    component: HappyLine,
     category: "design",
   },
 
