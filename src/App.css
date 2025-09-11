@@ -302,7 +302,7 @@ a {
 
 .project-row {
   display: grid;
-  grid-template-columns: 1.25fr 2fr 0.4fr;
+  grid-template-columns: 1.25fr 2fr 0.3fr;
   margin-bottom: 3px;
   align-items: center;
   padding: 0px 0;
@@ -322,7 +322,7 @@ a {
 }
 
 .status-badge {
-  padding: 1px 6px;
+  padding: 0.5px 4px;
   border-radius: 3px;
   font-size: 11px;
   font-weight: 600;
@@ -331,7 +331,7 @@ a {
 
 .new-badge {
   background: #dc5a2b;
-  color: #7d3301;
+  color: #481d00;
 }
 
 .wip-badge {
