@@ -21,17 +21,12 @@ export default function Solitaire({ project, onBack }) {
       <ProjectHeader
         project={project}
         onBack={onBack}
-        about={`Last year I worked with a team to tackle design challenges for the LEAR Lab's iTELL platform. 
-iTELL ("Intelligent Texts for Enhanced Lifelong Learning") is an AI-powered interactive textbook 
-framework designed to enhance learning through real-time feedback and user engagement.`}
-        tech={["React.js", "Vercel"]}
-        skills={["Front-end dev", "Web design"]}
-        link={"https://www.the-random-gallery.com/"}
+        about={`Made for my web dev class, this is a full-stack web solitaire site.`}
+        tech={["HTML/CSS", "JavaScript", "Node"]}
+        skills={["Full-stack", "Web design"]}
         type={["Solo work"]}
       />
       <div className="project-main-content">
-        <p>Preview: </p>
-
         <p>✮ ⋆ ˚｡𖦹 ⋆｡ ° ✩</p>
       </div>
     </div>
