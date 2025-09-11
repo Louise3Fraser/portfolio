@@ -3,7 +3,7 @@ import LeftColumn from "./columns/Left";
 import RightColumn from "./columns/Right";
 import MiddleColumn from "./columns/Middle";
 import { useEffect, useRef, useState } from "react";
-import { Analytics } from "@vercel/analytics/react";
+
 function App() {
   const rightColumnRef = useRef(null);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -43,8 +43,6 @@ function App() {
 
   return (
     <div className="container">
-      <Analytics />
-
       <div className="left-stack">
         <div className="column left">
           <LeftColumn />
