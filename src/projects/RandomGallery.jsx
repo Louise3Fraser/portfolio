@@ -28,10 +28,14 @@ export default function RandomGallery({ project, onBack }) {
         tech={["React.js", "Vercel"]}
         skills={["Front-end dev", "Web design"]}
         link={"https://www.the-random-gallery.com/"}
-        type={"Solo work"}
+        type={["Solo work"]}
       />
       <div className="project-main-content">
-        <img width={"100%"} alt="Code screenshots for The Random Gallery" src={code} />
+        <img
+          width={"100%"}
+          alt="Code screenshots for The Random Gallery"
+          src={code}
+        />
         <p style={{ paddingTop: "20px" }}>
           For my tech stack, I used React, CSS, Vercel, and Beehiiv. I was able
           to finish developing the site in just under a week, but I am still

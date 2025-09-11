@@ -25,7 +25,7 @@ export default function Moti({ project, onBack }) {
             mindfulness through guided meditations and community engagement.`}
         tech={["Figma", "Adobe Illustrator"]}
         skills={["UX/UI Design", "UX Research"]}
-        type={"Solo work"}
+        type={["Solo work"]}
       />
       <div className="project-main-content">
         <p>

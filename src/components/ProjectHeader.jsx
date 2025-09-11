@@ -17,7 +17,7 @@ function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
           paddingTop: "30px",
           paddingLeft: "30px",
           paddingRight: "30px",
-          marginBottom: tech ? "20px" : "0px"
+          marginBottom: tech ? "20px" : "0px",
         }}
       >
         {about}
@@ -50,7 +50,10 @@ function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
           <div className="info">
             <h2>Type</h2>
             <ul>
-              <li>{type}</li>
+              {type &&
+                type.map((item) => {
+                  return <li>{item}</li>;
+                })}
             </ul>
           </div>
         )}

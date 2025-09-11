@@ -24,7 +24,7 @@ export default function HappyLine({ project, onBack }) {
         about={`Last winter I took the psychology class, "Emotion," and, as a nonstandard final project, I opted to design a mobile application. I predicted this would be the perfect opportunity to combine my interest in psychology and design. HappyLine is a mobile application that fosters daily gratitude and the cultivation of positive emotions, activities proven to provide positive effects on one’s overall well-being.`}
         tech={["Figma", "Procreate"]}
         skills={["UX/UI Design", "UX Research", "Psychology"]}
-        type={"Class project"}
+        type={["Class project"]}
       />
       <div className="project-main-content">
         <p>

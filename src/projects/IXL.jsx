@@ -24,7 +24,7 @@ export default function IXL({ project, onBack }) {
         about={`For this design challenge, the goal was to create a new flexible homework assignment feature for IXL, enabling teachers to combine skills, lessons, and videos within a single assignment to better support student learning.`}
         tech={["Figma", "Adobe Illustrator"]}
         skills={["UX/UI Design", "UX Research"]}
-        type={"Design challenge"}
+        type={["Design challenge"]}
       />
       <div className="project-main-content">
         <p>
