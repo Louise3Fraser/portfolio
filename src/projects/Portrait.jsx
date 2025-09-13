@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/HeaderTop";
+import HeaderTop from "../components/headers/HeaderTop";
 import portrait from "../assets/art/portrait.png";
 
 export default function Portrait({ project, onBack }) {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/HeaderTop";
+import HeaderTop from "../components/headers/HeaderTop";
 import animation from "../assets/art/animation.mp4";
 
 export default function Animation({ project, onBack }) {

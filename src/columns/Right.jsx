@@ -1,39 +1,21 @@
-import React, { useState, useEffect, useRef } from "react";
-import ProjectList from "../components/ProjectList";
+import { useEffect } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import ProjectIndex from "../components/ProjectIndex";
+import ProjectDetail from "../components/ProjectDetail";
 
-function RightColumn({ selectedProject, onBack, onProjectSelect }) {
-  const [isVisible, setIsVisible] = useState(false);
-  const columnRef = useRef(null);
-
+function RightColumn({ scrollHostRef }) {
+  const location = useLocation();
   useEffect(() => {
-    if (columnRef.current) {
-      columnRef.current.scrollTop = 0;
-    }
-
-    setIsVisible(false);
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 50);
-
-    return () => clearTimeout(timer);
-  }, [selectedProject]);
-
-  if (selectedProject && selectedProject.component) {
-    const ProjectComponent = selectedProject.component;
-    return (
-      <div ref={columnRef} className="right-column-scroll-container">
-        <ProjectComponent project={selectedProject} onBack={onBack} />
-      </div>
-    );
-  }
+    if (scrollHostRef?.current) scrollHostRef.current.scrollTop = 0;
+  }, [location.pathname, scrollHostRef]);
 
   return (
-    <div
-      ref={columnRef}
-      className={`project-page-wrapper ${isVisible ? "fade-in" : "fade-out"}`}
-    >
-      <ProjectList onSelect={onProjectSelect} />
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/projects" replace />} />
+      <Route path="/projects" element={<ProjectIndex />} />
+      <Route path="/projects/:id" element={<ProjectDetail />} />{" "}
+      <Route path="*" element={<Navigate to="/projects" replace />} />
+    </Routes>
   );
 }
 

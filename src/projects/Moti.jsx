@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from "../components/headers/ProjectHeader";
 
 export default function Moti({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

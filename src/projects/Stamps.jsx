@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/HeaderTop";
+import HeaderTop from "../components/headers/HeaderTop";
 import stampsGreen from "../assets/art/stamps-green.png";
 import procreate from "../assets/art/procreate.png";
 

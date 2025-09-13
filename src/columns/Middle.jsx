@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Work from "../components/Work";
+import { useNavigate } from "react-router-dom";
 
-function MiddleColumn({ onProjectSelect }) {
+function MiddleColumn() {
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("all");
 
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
-    // Clear selected project when changing filters
-    onProjectSelect(null);
+    navigate("/projects");
   };
 
-  const handleProjectSelect = (project) => {
-    onProjectSelect(project);
-  };
   return (
     <div>
       <p>
@@ -47,11 +45,7 @@ function MiddleColumn({ onProjectSelect }) {
         </a>
         .{" "}
       </p>
-      <Work
-        activeFilter={activeFilter}
-        onFilterChange={handleFilterChange}
-        onProjectSelect={handleProjectSelect}
-      />
+      <Work activeFilter={activeFilter} onFilterChange={handleFilterChange} />
     </div>
   );
 }

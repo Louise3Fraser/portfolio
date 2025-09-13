@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/HeaderTop";
+import HeaderTop from "../components/headers/HeaderTop";
 import times from "../assets/art/times-square.png";
 
 export default function TimesSquare({ project, onBack }) {

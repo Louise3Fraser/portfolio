@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/HeaderTop";
+import HeaderTop from "../components/headers/HeaderTop";
 import stickers1 from "../assets/art/food-stickers-2.png";
 import stickers2 from "../assets/art/food-stickers-3.png";
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from "../components/headers/ProjectHeader";
 import code from "../assets/random-gallery/rg-architecture.png";
 
 export default function RandomGallery({ project, onBack }) {

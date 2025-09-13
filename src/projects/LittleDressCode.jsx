@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from "../components/headers/ProjectHeader";
 import stickies from "../assets/ldc/stickies.png";
 import webdevmap from "../assets/ldc/webdevmap.png";
 import wireframes from "../assets/ldc/wireframes-ldc.png";

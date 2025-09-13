@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from "../components/headers/ProjectHeader";
 import sprites from "../assets/mm/mm-sprites.png";
 
 export default function MushroomMayhem({ project, onBack }) {

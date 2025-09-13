@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/HeaderTop";
+import HeaderTop from "../components/headers/HeaderTop";
 import Sketch1 from "../assets/art/sketch1.png";
 import Sketch2 from "../assets/art/sketch2.png";
 import Sketch3 from "../assets/art/sketch3.png";

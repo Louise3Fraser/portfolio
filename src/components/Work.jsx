@@ -1,8 +1,10 @@
 import { projects } from "../data/Projects";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 
-function Work({ activeFilter, onFilterChange, onProjectSelect }) {
+function Work({ activeFilter, onFilterChange }) {
   const filters = ["all", "code", "design", "art", "writing"];
+  const navigate = useNavigate();
 
   const filteredProjects =
     activeFilter === "all"
@@ -20,13 +22,12 @@ function Work({ activeFilter, onFilterChange, onProjectSelect }) {
   };
 
   const handleProjectClick = (project) => {
-    if (project.component) {
-      onProjectSelect(project);
-    }
+    if (project?.id) navigate(`/projects/${project.id}`);
   };
 
   const handleFilterClick = (filter) => {
     onFilterChange(filter);
+    navigate("/projects");
   };
 
   return (
@@ -46,9 +47,9 @@ function Work({ activeFilter, onFilterChange, onProjectSelect }) {
       <div className="divider"></div>
 
       <div className="terminal-content">
-        {filteredProjects.map((project, index) => (
+        {filteredProjects.map((project) => (
           <div
-            key={index}
+            key={project.id}
             className="project-row"
             onClick={() => handleProjectClick(project)}
           >

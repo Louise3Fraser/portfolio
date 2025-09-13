@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProjectHeader from "../components/ProjectHeader";
+import ProjectHeader from "../components/headers/ProjectHeader";
 import vid from "../assets/itell/itell-vid.mp4";
 
 export default function Itell({ project, onBack }) {

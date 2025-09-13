@@ -1,4 +1,4 @@
-import "../App.css";
+import "../../App.css";
 import HeaderTop from "./HeaderTop";
 
 function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
