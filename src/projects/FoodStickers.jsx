@@ -7,8 +7,6 @@ export default function FoodStickers({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 50);

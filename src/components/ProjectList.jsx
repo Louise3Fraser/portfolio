@@ -5,14 +5,14 @@ function ProjectList({ onSelect }) {
   return (
     <div>
       {projects.map((project) => (
-        <>
+        <div key={project.id}>
           <ProjectCard
             key={project.id}
             project={project}
             onClick={() => onSelect(project)}
           />
           <div className="divider" />
-        </>
+        </div>
       ))}
     </div>
   );

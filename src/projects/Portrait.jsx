@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import HeaderTop from "../components/HeaderTop";
-import portrait from "../assets/art/portrait.png"
+import portrait from "../assets/art/portrait.png";
 
 export default function Portrait({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-        window.scrollTo(0, 0);
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 50);

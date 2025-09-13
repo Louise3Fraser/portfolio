@@ -420,3 +420,8 @@ li {
     transform: rotate(360deg);
   }
 }
+
+.right-column-scroll-container,
+.project-page-wrapper {
+  height: 100vh; /* or whatever height you want */
+}

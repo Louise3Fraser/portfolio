@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import indiana from "../assets/other/indiana.png";
+import { useRef, useState } from "react";
 import photo from "../assets/other/photo.png";
 import music from "../assets/other/music.jpg";
 import song from "../assets/song.mp3";
@@ -8,8 +7,6 @@ import gh from "../assets/other/gh.png";
 import lin from "../assets/other/in.png";
 
 function LeftColumn() {
-  const [hovered, setHovered] = useState(false);
-
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef(null);
 
@@ -29,11 +26,6 @@ function LeftColumn() {
       setPlaying(false);
     }
   };
-  // const imageStyle = {
-  //   width: "100%",
-  //   transition: "transform 1s ease",
-  //   transform: hovered ? "scale(0.95) rotate(-.5deg)" : "scale(1) rotate(0deg)",
-  // };
 
   return (
     <div className="left-col">
@@ -42,9 +34,9 @@ function LeftColumn() {
           src={photo}
           style={{ objectFit: "contain" }}
           height={"45px"}
-          alt="Photo of Louise :)"
+          alt="Louise :)"
         />
-        <p
+        <div
           style={{
             margin: "0px",
             gap: "8px",
@@ -53,26 +45,31 @@ function LeftColumn() {
           }}
         >
           <h1>Louise Fraser</h1>
-          <div style={{ display: "flex", gap: "13px", alignItems: "center" }}>
+          <span style={{ display: "flex", gap: "13px", alignItems: "center" }}>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={"https://www.linkedin.com/in/louise-fraser-379b0b251/"}
             >
-              <img src={lin} width={"15px"} height={"100%"} />
+              <img
+                alt="LinkedIn icon"
+                src={lin}
+                width={"15px"}
+                height={"100%"}
+              />
             </a>
             <a href="louise3fraser@gmail.com">
-              <img src={mail} width={"100%"} height={"13px"} />
+              <img alt="Mail icon" src={mail} width={"100%"} height={"13px"} />
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={"https://github.com/Louise3Fraser"}
             >
-              <img src={gh} width={"15px"} height={"100%"} />
+              <img alt="Github icon" src={gh} width={"15px"} height={"100%"} />
             </a>
-          </div>
-        </p>
+          </span>
+        </div>
       </div>
       <div className="divider" />
       <div className="music">

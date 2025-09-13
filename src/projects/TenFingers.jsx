@@ -5,8 +5,6 @@ export default function TenFingers({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 50);
@@ -56,7 +54,7 @@ export default function TenFingers({ project, onBack }) {
           “I found them underneath the floorboards in the basement. Right next
           to the old furnace.”
         </p>
-          <p>✮ ⋆ ˚｡𖦹 ⋆｡ ° ✩</p>
+        <p>✮ ⋆ ˚｡𖦹 ⋆｡ ° ✩</p>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
             <ul>
               {tech &&
                 tech.map((item) => {
-                  return <li>{item}</li>;
+                  return <li key={item}>{item}</li>;
                 })}
             </ul>
           </div>
@@ -40,7 +40,7 @@ function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
             <ul>
               {skills &&
                 skills.map((item) => {
-                  return <li>{item}</li>;
+                  return <li key={item}>{item}</li>;
                 })}
             </ul>
           </div>
@@ -52,7 +52,7 @@ function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
             <ul>
               {type &&
                 type.map((item) => {
-                  return <li>{item}</li>;
+                  return <li key={item}>{item}</li>;
                 })}
             </ul>
           </div>

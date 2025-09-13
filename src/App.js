@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 function App() {
   const rightColumnRef = useRef(null);
   const [selectedProject, setSelectedProject] = useState(null);
+
   const handleProjectSelect = (project) => {
     setSelectedProject(project);
   };

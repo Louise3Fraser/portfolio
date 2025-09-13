@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import HeaderTop from "../components/HeaderTop";
-import times from "../assets/art/times-square.png"
+import times from "../assets/art/times-square.png";
 
 export default function TimesSquare({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-        window.scrollTo(0, 0);
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 50);

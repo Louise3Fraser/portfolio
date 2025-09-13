@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ProjectList from "../components/ProjectList";
 
 function RightColumn({ selectedProject, onBack, onProjectSelect }) {
   const [isVisible, setIsVisible] = useState(false);
+  const columnRef = useRef(null);
 
   useEffect(() => {
-        window.scrollTo(0, 0);
+    if (columnRef.current) {
+      columnRef.current.scrollTop = 0;
+    }
 
     setIsVisible(false);
     const timer = setTimeout(() => {
@@ -17,11 +20,16 @@ function RightColumn({ selectedProject, onBack, onProjectSelect }) {
 
   if (selectedProject && selectedProject.component) {
     const ProjectComponent = selectedProject.component;
-    return <ProjectComponent project={selectedProject} onBack={onBack} />;
+    return (
+      <div ref={columnRef} className="right-column-scroll-container">
+        <ProjectComponent project={selectedProject} onBack={onBack} />
+      </div>
+    );
   }
 
   return (
     <div
+      ref={columnRef}
       className={`project-page-wrapper ${isVisible ? "fade-in" : "fade-out"}`}
     >
       <ProjectList onSelect={onProjectSelect} />

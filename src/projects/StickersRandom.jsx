@@ -9,8 +9,6 @@ export default function StickersRandom({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 50);
@@ -27,7 +25,7 @@ export default function StickersRandom({ project, onBack }) {
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
           <img width={"100%"} alt="Random stickers" src={stickers1} />
           <img width={"100%"} alt="Random stickers" src={stickers2} />
-          <img width={"100%"} alt="Random stickers"src={stickers3} />
+          <img width={"100%"} alt="Random stickers" src={stickers3} />
           <img width={"100%"} alt="Random stickers" src={stickers4} />
         </div>
       </div>
