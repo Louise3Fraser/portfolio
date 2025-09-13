@@ -13,7 +13,8 @@ function RightColumn({ scrollHostRef }) {
     <Routes>
       <Route path="/" element={<Navigate to="/projects" replace />} />
       <Route path="/projects" element={<ProjectIndex />} />
-      <Route path="/projects/:id" element={<ProjectDetail />} />{" "}
+      <Route path="/projects/:id" element={<ProjectDetail />} />
+      <Route path="/projects/c/:category" element={<ProjectIndex />} />
       <Route path="*" element={<Navigate to="/projects" replace />} />
     </Routes>
   );

@@ -1,14 +1,22 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Work from "../components/Work";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function MiddleColumn() {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("all");
+  const location = useLocation();
+
+  useEffect(() => {
+    const m = location.pathname.match(
+      /^\/projects\/c\/(code|design|art|writing)$/
+    );
+    setActiveFilter(m ? m[1] : "all");
+  }, [location.pathname]);
 
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
-    navigate("/projects");
+    navigate(filter === "all" ? "/projects" : `/projects/c/${filter}`);
   };
 
   return (
