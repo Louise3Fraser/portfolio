@@ -1,8 +1,10 @@
 import { projects } from "../data/Projects";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 
 function Work({ activeFilter, onFilterChange }) {
   const filters = ["all", "code", "design", "art", "writing"];
+  const navigate = useNavigate();
 
   const filteredProjects =
     activeFilter === "all"
@@ -19,8 +21,9 @@ function Work({ activeFilter, onFilterChange }) {
     return null;
   };
 
-  const handleProjectClick = () => {};
-
+  const handleProjectClick = (project) => {
+    if (project?.id) navigate(`/projects/${project.id}`);
+  };
   const handleFilterClick = (filter) => {
     onFilterChange(filter);
   };
