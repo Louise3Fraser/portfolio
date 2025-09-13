@@ -2,7 +2,7 @@
 
 ### 🌐 Check it out live
 
-✨ [louisebfraser.com](https://www.louisebfraser.com) ✨  
+✨ <a href="https://www.louisebfraser.com" target="_blank">louisebfraser.com</a> ✨ 
 
 ### 🛠 Built With
 - **React.js**
