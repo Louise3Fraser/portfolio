@@ -6,5 +6,6 @@
 
 ### 🛠 Built With
 - **React.js**
-- **JavaScript** – the magic that keeps everything together  
-- **CSS** – love for design
+- **JavaScript** 
+- **CSS**
+- **Vercel**
