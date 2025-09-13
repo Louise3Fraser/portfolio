@@ -58,15 +58,15 @@ function LeftColumn() {
                 height={"100%"}
               />
             </a>
-            <a href="louise3fraser@gmail.com">
-              <img alt="Mail icon" src={mail} width={"100%"} height={"13px"} />
-            </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={"https://github.com/Louise3Fraser"}
             >
               <img alt="Github icon" src={gh} width={"15px"} height={"100%"} />
+            </a>
+            <a href="louise3fraser@gmail.com">
+              <img alt="Mail icon" src={mail} width={"15px"} height={"100%"} />
             </a>
           </span>
         </div>
