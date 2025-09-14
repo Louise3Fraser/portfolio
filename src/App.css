@@ -423,5 +423,5 @@ li {
 
 .right-column-scroll-container,
 .project-page-wrapper {
-  height: 100vh; /* or whatever height you want */
+  height: 100vh;
 }
