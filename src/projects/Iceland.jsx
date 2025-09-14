@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import HeaderTop from "../components/headers/HeaderTop";
-import portrait from "../assets/art/portrait.png";
+import iceland from "../assets/art/iceland-travel-poster.png";
 
-export default function Portrait({ project, onBack }) {
+export default function Iceland({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Portrait({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img width={"100%"} alt="Portrait of a man" src={portrait} />
+          <img width={"100%"} alt="Iceland travel poster" src={iceland} />
         </div>
       </div>
     </div>

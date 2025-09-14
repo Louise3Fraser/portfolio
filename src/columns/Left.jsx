@@ -77,17 +77,7 @@ function LeftColumn() {
           onClick={handleTogglePlay}
           aria-pressed={playing}
           title={playing ? "Pause" : "Play"}
-          style={{
-            border: "none",
-            background: "transparent",
-            display: "flex",
-            flexDirection: "row",
-            padding: 0,
-            cursor: "pointer",
-            lineHeight: 0,
-            gap: "10px",
-            alignItems: "flex-end",
-          }}
+          className="music-button"
         >
           <img
             src={music}

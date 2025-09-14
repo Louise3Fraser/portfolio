@@ -19,6 +19,9 @@ import times from "../assets/art/times-square.png";
 import moti from "../assets/moti/moti-cover.png";
 import ixl from "../assets/ixl/ixl-cover.png";
 import hl from "../assets/happyline/hl-cover.png";
+import melbourne from "../assets/art/melbourne.png";
+import travel from "../assets/art/iceland-travel-poster.png";
+import campus from "../assets/art/unimelb-campus.png";
 
 // components:
 import RandomGallery from "../projects/RandomGallery";
@@ -37,6 +40,9 @@ import Portrait from "../projects/Portrait";
 import Moti from "../projects/Moti";
 import IXL from "../projects/IXL";
 import HappyLine from "../projects/HappyLine";
+import Downtown from "../projects/Downtown";
+import Iceland from "../projects/Iceland";
+import Campus from "../projects/Campus";
 
 export const projects = [
   {
@@ -85,6 +91,7 @@ export const projects = [
     category: "code",
     image: solitaireCover,
   },
+
   {
     id: "moti",
     title: "Moti",
@@ -133,6 +140,28 @@ export const projects = [
     category: "code",
   },
   {
+    id: "travel-poster",
+    title: "Iceland Poster",
+    date: "2023",
+    src: travel,
+    image: travel,
+    type: "img",
+    desc: "created in Illustrator",
+    component: Iceland,
+    category: "art",
+  },
+  {
+    id: "campus",
+    title: "UniMelb Campus",
+    date: "2024",
+    src: campus,
+    image: campus,
+    type: "img",
+    desc: "edited w/Photoshop",
+    component: Campus,
+    category: "art",
+  },
+  {
     id: "nyc",
     title: "Times Square",
     date: "2024",
@@ -140,7 +169,7 @@ export const projects = [
     type: "img",
     desc: "edited w/photoshop",
     component: TimesSquare,
-    category: "design",
+    category: "art",
   },
   {
     id: "animation",
@@ -183,6 +212,17 @@ export const projects = [
     type: "img",
     desc: "hand-drawn food stickers",
     component: FoodStickers,
+    category: "art",
+  },
+  {
+    id: "melbourne",
+    title: "Downtown",
+    date: "2024",
+    src: melbourne,
+    image: melbourne,
+    type: "img",
+    desc: "edited w/Photoshop",
+    component: Downtown,
     category: "art",
   },
   {
