@@ -47,19 +47,7 @@ import GS from "../projects/code/GameStudio";
 
 export const projects = [
   // coming soon:
-  {
-    id: "gamestudio",
-    title: "GameStudio",
-    date: "2025",
-    // src: portrait,
-    // image: portrait,
-    type: "img",
-    desc: "react + typescript",
-    component: GS,
-    category: "code",
-    clickable: false,
-    status: "coming soon",
-  },
+
   {
     id: "rg",
     title: "Random Gallery",
@@ -291,5 +279,18 @@ export const projects = [
     component: Portrait,
     category: "art",
     clickable: true,
+  },
+  {
+    id: "gamestudio",
+    title: "GameStudio",
+    date: "2025",
+    // src: portrait,
+    // image: portrait,
+    type: "img",
+    desc: "react + typescript",
+    component: GS,
+    category: "code",
+    clickable: false,
+    status: "wip",
   },
 ];
