@@ -57,5 +57,4 @@ function MiddleColumn() {
     </div>
   );
 }
-
 export default MiddleColumn;
