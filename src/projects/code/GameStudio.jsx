@@ -26,7 +26,7 @@ export default function GameStudio({ project, onBack }) {
             putting creative spins on familiar games, and maybe come up with a
             few originals.
           </p>
-          <video
+          {/* <video
             style={{
               borderRadius: "5px",
               border: "1px dashed rgba(255, 255, 255, 0.05)",
@@ -37,7 +37,7 @@ export default function GameStudio({ project, onBack }) {
             autoPlay
             loop
             playsInline
-          />
+          /> */}
           <a
             target="_blank"
             rel="noopener noreferrer"
