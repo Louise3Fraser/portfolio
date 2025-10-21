@@ -24,27 +24,42 @@ import travel from "../assets/art/iceland-travel-poster.png";
 import campus from "../assets/art/unimelb-campus.png";
 
 // components:
-import RandomGallery from "../projects/RandomGallery";
-import LittleDressCode from "../projects/LittleDressCode";
-import Sketches from "../projects/Sketches";
-import Solitaire from "../projects/Solitaire";
-import TenFingers from "../projects/TenFingers";
-import Itell from "../projects/Itell";
-import Animation from "../projects/Animation";
-import Stamps from "../projects/Stamps";
-import StickersRandom from "../projects/StickersRandom";
-import FoodStickers from "../projects/FoodStickers";
-import MushroomMayhem from "../projects/MushroomMayhem";
-import TimesSquare from "../projects/TimesSquare";
-import Portrait from "../projects/Portrait";
-import Moti from "../projects/Moti";
-import IXL from "../projects/IXL";
-import HappyLine from "../projects/HappyLine";
-import Downtown from "../projects/Downtown";
-import Iceland from "../projects/Iceland";
-import Campus from "../projects/Campus";
+import RandomGallery from "../projects/code/RandomGallery";
+import LittleDressCode from "../projects/code/LittleDressCode";
+import Sketches from "../projects/art/Sketches";
+import Solitaire from "../projects/code/Solitaire";
+import TenFingers from "../projects/writing/TenFingers";
+import Itell from "../projects/code/Itell";
+import Animation from "../projects/art/Animation";
+import Stamps from "../projects/art/Stamps";
+import StickersRandom from "../projects/art/StickersRandom";
+import FoodStickers from "../projects/art/FoodStickers";
+import MushroomMayhem from "../projects/code/MushroomMayhem";
+import TimesSquare from "../projects/art/TimesSquare";
+import Portrait from "../projects/art/Portrait";
+import Moti from "../projects/design/Moti";
+import IXL from "../projects/design/IXL";
+import HappyLine from "../projects/design/HappyLine";
+import Downtown from "../projects/art/Downtown";
+import Iceland from "../projects/art/Iceland";
+import Campus from "../projects/art/Campus";
+import GS from "../projects/code/GameStudio";
 
 export const projects = [
+  // coming soon:
+  {
+    id: "gamestudio",
+    title: "GameStudio",
+    date: "2025",
+    // src: portrait,
+    // image: portrait,
+    type: "img",
+    desc: "react + typescript",
+    component: GS,
+    category: "code",
+    clickable: false,
+    status: "coming soon",
+  },
   {
     id: "rg",
     title: "Random Gallery",
@@ -56,6 +71,7 @@ export const projects = [
     image: rgImg,
     category: "code",
     status: "new",
+    clickable: true,
   },
   {
     id: "ldc",
@@ -67,6 +83,7 @@ export const projects = [
     component: LittleDressCode,
     category: "code",
     image: ldcImg,
+    clickable: true,
   },
   {
     id: "itell",
@@ -78,6 +95,7 @@ export const projects = [
     component: Itell,
     category: "code",
     image: itellCover,
+    clickable: true,
   },
 
   {
@@ -90,6 +108,7 @@ export const projects = [
     component: Solitaire,
     category: "code",
     image: solitaireCover,
+    clickable: true,
   },
 
   {
@@ -102,6 +121,7 @@ export const projects = [
     desc: "making meditation a habit",
     component: Moti,
     category: "design",
+    clickable: true,
   },
   {
     id: "sketches",
@@ -113,6 +133,7 @@ export const projects = [
     desc: "3 stages of art",
     component: Sketches,
     category: "art",
+    clickable: true,
   },
 
   {
@@ -126,6 +147,7 @@ export const projects = [
     component: TenFingers,
     category: "writing",
     status: "wip",
+    clickable: true,
   },
 
   {
@@ -138,6 +160,7 @@ export const projects = [
     desc: "2d platform Unity game",
     component: MushroomMayhem,
     category: "code",
+    clickable: true,
   },
   {
     id: "travel-poster",
@@ -149,6 +172,7 @@ export const projects = [
     desc: "created in Illustrator",
     component: Iceland,
     category: "art",
+    clickable: true,
   },
   {
     id: "campus",
@@ -160,6 +184,7 @@ export const projects = [
     desc: "edited w/Photoshop",
     component: Campus,
     category: "art",
+    clickable: true,
   },
   {
     id: "nyc",
@@ -170,6 +195,7 @@ export const projects = [
     desc: "edited w/photoshop",
     component: TimesSquare,
     category: "art",
+    clickable: true,
   },
   {
     id: "animation",
@@ -180,6 +206,7 @@ export const projects = [
     desc: "made with aftereffects",
     component: Animation,
     category: "art",
+    clickable: true,
   },
   {
     id: "ixl",
@@ -191,6 +218,7 @@ export const projects = [
     desc: "new assignment feature",
     component: IXL,
     category: "design",
+    clickable: true,
   },
   {
     id: "happyline",
@@ -202,6 +230,7 @@ export const projects = [
     desc: "fostering daily gratitude",
     component: HappyLine,
     category: "design",
+    clickable: true,
   },
 
   {
@@ -213,6 +242,7 @@ export const projects = [
     desc: "hand-drawn food stickers",
     component: FoodStickers,
     category: "art",
+    clickable: true,
   },
   {
     id: "melbourne",
@@ -224,6 +254,7 @@ export const projects = [
     desc: "edited w/Photoshop",
     component: Downtown,
     category: "art",
+    clickable: true,
   },
   {
     id: "stickersvarious",
@@ -234,9 +265,9 @@ export const projects = [
     desc: "hand-drawn stickers",
     component: StickersRandom,
     category: "art",
+    clickable: true,
   },
 
-  ////
   {
     id: "stamps",
     title: "Procreate Stamps",
@@ -246,6 +277,7 @@ export const projects = [
     desc: "hand-drawn stamps",
     component: Stamps,
     category: "art",
+    clickable: true,
   },
 
   {
@@ -258,5 +290,6 @@ export const projects = [
     desc: "portrait practice",
     component: Portrait,
     category: "art",
+    clickable: true,
   },
 ];

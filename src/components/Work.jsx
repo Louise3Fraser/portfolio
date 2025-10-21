@@ -18,12 +18,16 @@ function Work({ activeFilter, onFilterChange }) {
     if (project.status === "wip") {
       return <span className="status-badge new-badge">WIP⧗</span>;
     }
+    if (project.status === "coming soon") {
+      return <span className="status-badge cs-badge">TBA⏲</span>;
+    }
     return null;
   };
 
   const handleProjectClick = (project) => {
     if (project?.id) navigate(`/projects/${project.id}`);
   };
+
   const handleFilterClick = (filter) => {
     onFilterChange(filter);
   };

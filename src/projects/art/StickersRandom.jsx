@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/headers/HeaderTop";
-import stickers1 from "../assets/art/stickersr-1.png";
-import stickers2 from "../assets/art/stickersr-2.png";
-import stickers3 from "../assets/art/stickersr-3.png";
-import stickers4 from "../assets/art/stickersr-4.png";
+import HeaderTop from "../../components/headers/HeaderTop";
+import stickers1 from "../../assets/art/stickersr-1.png";
+import stickers2 from "../../assets/art/stickersr-2.png";
+import stickers3 from "../../assets/art/stickersr-3.png";
+import stickers4 from "../../assets/art/stickersr-4.png";
 
 export default function StickersRandom({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

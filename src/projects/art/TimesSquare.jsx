@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
-import HeaderTop from "../components/headers/HeaderTop";
-import melbourne from "../assets/art/melbourne.png";
+import React, { useState, useEffect } from "react";
+import HeaderTop from "../../components/headers/HeaderTop";
+import times from "../../assets/art/times-square.png";
 
-export default function Downtown({ project, onBack }) {
+export default function TimesSquare({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,11 +20,7 @@ export default function Downtown({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img
-            width={"100%"}
-            alt="Downtown Melbourne, Australia"
-            src={melbourne}
-          />
+          <img alt="NYC Times Square" width={"100%"} src={times} />
         </div>
       </div>
     </div>

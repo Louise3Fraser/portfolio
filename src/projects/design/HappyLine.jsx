@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProjectHeader from "../components/headers/ProjectHeader";
+import ProjectHeader from "../../components/headers/ProjectHeader";
 
 export default function HappyLine({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

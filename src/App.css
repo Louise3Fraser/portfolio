@@ -258,7 +258,6 @@ a {
   justify-content: space-between;
 }
 
-/* Work list styles */
 .terminal-container {
   margin-top: 60px;
   overflow-x: auto;
@@ -338,6 +337,11 @@ a {
 .wip-badge {
   background: #edca2b;
   color: #6c4f00;
+}
+
+.cs-badge {
+  background: #3d93cc;
+  color: #092f48;
 }
 
 .top {

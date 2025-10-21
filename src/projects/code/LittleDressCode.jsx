@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import ProjectHeader from "../components/headers/ProjectHeader";
-import stickies from "../assets/ldc/stickies.png";
-import webdevmap from "../assets/ldc/webdevmap.png";
-import wireframes from "../assets/ldc/wireframes-ldc.png";
-import behavior from "../assets/ldc/behavior-map.png";
-import prototypes from "../assets/ldc/prototypes-ldc.png";
-import styles from "../assets/ldc/style-ldc.png";
+import ProjectHeader from "../../components/headers/ProjectHeader";
+import stickies from "../../assets/ldc/stickies.png";
+import webdevmap from "../../assets/ldc/webdevmap.png";
+import wireframes from "../../assets/ldc/wireframes-ldc.png";
+import behavior from "../../assets/ldc/behavior-map.png";
+import prototypes from "../../assets/ldc/prototypes-ldc.png";
+import styles from "../../assets/ldc/style-ldc.png";
 
 export default function LittleDressCode({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

@@ -14,8 +14,10 @@ export default function ProjectIndex() {
   }, []);
 
   const visible = useMemo(() => {
-    if (!category) return projects;
-    return projects.filter((p) => p.category === category);
+    // filter by visibility
+    let visible = projects.filter((p) => p.clickable === true);
+    if (!category) return visible;
+    return visible.filter((p) => p.category === category);
   }, [category]);
 
   return (
