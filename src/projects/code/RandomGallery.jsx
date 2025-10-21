@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import ProjectHeader from "../components/headers/ProjectHeader";
-import code from "../assets/random-gallery/rg-architecture.png";
+import { useState, useEffect } from "react";
+import ProjectHeader from "../../components/headers/ProjectHeader";
+import code from "../../assets/random-gallery/rg-architecture.png";
 
 export default function RandomGallery({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,10 +38,6 @@ export default function RandomGallery({ project, onBack }) {
           For my tech stack, I used React, CSS, Vercel, and Beehiiv. I was able
           to finish developing the site in just under a week, but I am still
           updating the site (i.e., adding new items) when I can!
-        </p>
-        <p>
-          This is all for now. Feel free to check out the live site. More
-          details coming soon!
         </p>
         <p>✮ ⋆ ˚｡𖦹 ⋆｡ ° ✩</p>
       </div>

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/headers/HeaderTop";
-import animation from "../assets/art/animation.mp4";
+import { useState, useEffect } from "react";
+import HeaderTop from "../../components/headers/HeaderTop";
+import portrait from "../../assets/art/portrait.png";
 
-export default function Animation({ project, onBack }) {
+export default function Portrait({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -19,7 +19,9 @@ export default function Animation({ project, onBack }) {
     >
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
-        <video src={animation} width="100%" muted autoPlay loop playsInline />
+        <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+          <img width={"100%"} alt="Portrait of a man" src={portrait} />
+        </div>
       </div>
     </div>
   );

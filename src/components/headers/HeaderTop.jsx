@@ -10,6 +10,7 @@ function HeaderTop({ project, onBack }) {
             width: "70px",
             display: "flex",
             justifyContent: "flex-start",
+            padding: "0px",
           }}
         >
           ← back

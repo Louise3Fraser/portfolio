@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import ProjectHeader from "../components/headers/ProjectHeader";
-import vid from "../assets/itell/itell-vid.mp4";
-import old from "../assets/itell/old-itell.png";
-import goals from "../assets/itell/goals.png";
-import question from "../assets/itell/itell-question.png";
-import persona from "../assets/itell/itell-persona.png";
-import ca from "../assets/itell/itell-ca.png";
+import ProjectHeader from "../../components/headers/ProjectHeader";
+import vid from "../../assets/itell/itell-vid.mp4";
+import old from "../../assets/itell/old-itell.png";
+import goals from "../../assets/itell/goals.png";
+import question from "../../assets/itell/itell-question.png";
+import persona from "../../assets/itell/itell-persona.png";
+import ca from "../../assets/itell/itell-ca.png";
 
 export default function Itell({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

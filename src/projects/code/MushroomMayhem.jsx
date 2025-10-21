@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ProjectHeader from "../components/headers/ProjectHeader";
-import sprites from "../assets/mm/mm-sprites.png";
+import ProjectHeader from "../../components/headers/ProjectHeader";
+import sprites from "../../assets/mm/mm-sprites.png";
 
 export default function MushroomMayhem({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

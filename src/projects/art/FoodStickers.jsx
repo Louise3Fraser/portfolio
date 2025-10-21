@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
-import HeaderTop from "../components/headers/HeaderTop";
-import portrait from "../assets/art/portrait.png";
+import React, { useState, useEffect } from "react";
+import HeaderTop from "../../components/headers/HeaderTop";
+import stickers1 from "../../assets/art/food-stickers-2.png";
+import stickers2 from "../../assets/art/food-stickers-3.png";
 
-export default function Portrait({ project, onBack }) {
+export default function FoodStickers({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,7 +21,8 @@ export default function Portrait({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img width={"100%"} alt="Portrait of a man" src={portrait} />
+          <img alt="Food stickers" width={"100%"} src={stickers1} />
+          <img alt="Food stickers" width={"100%"} src={stickers2} />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import HeaderTop from "../components/headers/HeaderTop";
-import iceland from "../assets/art/iceland-travel-poster.png";
+import HeaderTop from "../../components/headers/HeaderTop";
+import iceland from "../../assets/art/iceland-travel-poster.png";
 
 export default function Iceland({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);

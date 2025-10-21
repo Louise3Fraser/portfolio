@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
-import HeaderTop from "../components/headers/HeaderTop";
-import stampsGreen from "../assets/art/stamps-green.png";
-import procreate from "../assets/art/procreate.png";
+import { useState, useEffect } from "react";
+import HeaderTop from "../../components/headers/HeaderTop";
+import campus from "../../assets/art/unimelb-campus.png";
 
-export default function Stamps({ project, onBack }) {
+export default function Campus({ project, onBack }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -21,8 +20,11 @@ export default function Stamps({ project, onBack }) {
       <HeaderTop project={project} onBack={onBack} />
       <div className="project-main-content">
         <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-          <img width={"100%"} alt="Leaf stamps" src={stampsGreen} />
-          <img width={"100%"} alt="Leaf stamps in Procreate" src={procreate} />
+          <img
+            width={"100%"}
+            alt="Archway in the University of Melbourne campus"
+            src={campus}
+          />
         </div>
       </div>
     </div>
