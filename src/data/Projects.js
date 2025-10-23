@@ -22,6 +22,8 @@ import hl from "../assets/happyline/hl-cover.png";
 import melbourne from "../assets/art/melbourne.png";
 import travel from "../assets/art/iceland-travel-poster.png";
 import campus from "../assets/art/unimelb-campus.png";
+import reveal from "../assets/reveal/reveal.mp4";
+import revealImg from "../assets/reveal/reveal.png";
 
 // components:
 import RandomGallery from "../projects/code/RandomGallery";
@@ -44,10 +46,9 @@ import Downtown from "../projects/art/Downtown";
 import Iceland from "../projects/art/Iceland";
 import Campus from "../projects/art/Campus";
 import GS from "../projects/code/GameStudio";
+import Reveal from "../projects/code/Reveal";
 
 export const projects = [
-  // coming soon:
-
   {
     id: "rg",
     title: "Random Gallery",
@@ -58,7 +59,6 @@ export const projects = [
     desc: "full-stack react website",
     image: rgImg,
     category: "code",
-    status: "new",
     clickable: true,
   },
   {
@@ -71,6 +71,19 @@ export const projects = [
     component: LittleDressCode,
     category: "code",
     image: ldcImg,
+    clickable: true,
+  },
+  {
+    id: "reveal",
+    title: "Reveal effect",
+    date: "2025",
+    src: reveal,
+    type: "video",
+    component: Reveal,
+    desc: "canvas 2D rendering",
+    image: revealImg,
+    category: "code",
+    status: "new",
     clickable: true,
   },
   {
