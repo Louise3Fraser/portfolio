@@ -1,7 +1,16 @@
 import "../../App.css";
 import HeaderTop from "./HeaderTop";
 
-function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
+function ProjectHeader({
+  project,
+  onBack,
+  tech,
+  about,
+  skills,
+  link,
+  type,
+  gh,
+}) {
   return (
     <div>
       <div className="overview">
@@ -64,6 +73,18 @@ function ProjectHeader({ project, onBack, tech, about, skills, link, type }) {
               {link && (
                 <a target="_blank" rel="noopener noreferrer" href={link}>
                   See live↗
+                </a>
+              )}
+            </ul>
+          </div>
+        )}
+        {gh && (
+          <div className="info">
+            <h2>Github</h2>
+            <ul>
+              {gh && (
+                <a target="_blank" rel="noopener noreferrer" href={gh}>
+                  Repo↗
                 </a>
               )}
             </ul>
