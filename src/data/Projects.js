@@ -25,6 +25,8 @@ import campus from "../assets/art/unimelb-campus.png";
 import reveal from "../assets/reveal/reveal.mp4";
 import revealImg from "../assets/reveal/reveal.png";
 
+import canvas from "../assets/canvas.mp4";
+
 // components:
 import RandomGallery from "../projects/code/RandomGallery";
 import LittleDressCode from "../projects/code/LittleDressCode";
@@ -49,6 +51,18 @@ import GS from "../projects/code/GameStudio";
 import Reveal from "../projects/code/Reveal";
 
 export const projects = [
+  // {
+  //   id: "rg",
+  //   title: "Random Gallery",
+  //   date: "2025",
+  //   src: canvas,
+  //   type: "video",
+  //   component: RandomGallery,
+  //   desc: "full-stack react website",
+  //   image: rgImg,
+  //   category: "code",
+  //   clickable: true,
+  // },
   {
     id: "rg",
     title: "Random Gallery",
@@ -281,18 +295,18 @@ export const projects = [
     clickable: true,
   },
 
-  {
-    id: "portrait",
-    title: "Portrait",
-    date: "2024",
-    src: portrait,
-    image: portrait,
-    type: "img",
-    desc: "portrait practice",
-    component: Portrait,
-    category: "art",
-    clickable: true,
-  },
+  // {
+  //   id: "portrait",
+  //   title: "Portrait",
+  //   date: "2024",
+  //   src: portrait,
+  //   image: portrait,
+  //   type: "img",
+  //   desc: "portrait practice",
+  //   component: Portrait,
+  //   category: "art",
+  //   clickable: true,
+  // },
   {
     id: "gamestudio",
     title: "GameStudio",
