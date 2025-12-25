@@ -28,12 +28,18 @@ function MiddleColumn() {
           rel="noopener noreferrer"
           href={"https://www.vanderbilt.edu/"}
         >
-          Vanderbilt University
+          Vanderbilt
         </a>{" "}
-        graduate with a double major in Computer Science & Psychology. I build
-        at the intersection of engineering and design. I’m excited about
-        creating technology grounded in human behavior that actually makes a
-        difference.
+        University graduate with a double major in Computer Science &
+        Psychology. I'm currently building at{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={"https://overjoy.ai/"}
+        >
+          Overjoy
+        </a>
+        , where I enjoy working at the intersection of engineering and design.
       </p>
       <p>
         Outside of work, I’m usually cooking, hiking, playing videogames, or

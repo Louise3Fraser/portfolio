@@ -24,6 +24,7 @@ import travel from "../assets/art/iceland-travel-poster.png";
 import campus from "../assets/art/unimelb-campus.png";
 import reveal from "../assets/reveal/reveal.mp4";
 import revealImg from "../assets/reveal/reveal.png";
+import dataHub from "../assets/datahub/task.mp4";
 
 import canvas from "../assets/canvas.mp4";
 
@@ -56,6 +57,18 @@ export const projects = [
   //   title: "Random Gallery",
   //   date: "2025",
   //   src: canvas,
+  //   type: "video",
+  //   component: RandomGallery,
+  //   desc: "full-stack react website",
+  //   image: rgImg,
+  //   category: "code",
+  //   clickable: true,
+  // },
+  // {
+  //   id: "rg",
+  //   title: "Random Gallery",
+  //   date: "2025",
+  //   src: dataHub,
   //   type: "video",
   //   component: RandomGallery,
   //   desc: "full-stack react website",
